@@ -18,19 +18,6 @@ app.listen(PORT, () =>
   console.log(`Server is running on port http://localhost:${PORT}`)
 );
 
-// function extractText(resp) {
-//   try {
-//     const text =
-//       resp?.response?.candidates?.[0]?.content?.parts?.[0]?.text ??
-//       resp?.candidates?.[0]?.content?.parts?.[0]?.text ??
-//       resp?.response?.candidates?.content?.[0]?.text;
-//     return text ?? JSON.stringify(resp, null, 2);
-//   } catch (error) {
-//     console.error("Error extracting text:", error);
-//     return JSON.stringify(resp, null, 2);
-//   }
-// }
-
 function extract(resp) {
   try {
     const text =
